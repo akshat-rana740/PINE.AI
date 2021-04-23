@@ -1,1 +1,8 @@
 #PINE.AI is a virtual assistant like google assistant.
+import pyttsx3
+import speech_recognizer as sr
+Boy = pyttsx3.init('sapi5')
+voice = Boy.GetProperty("voices")
+Boy.SetProperty('voice',voice[0].id)
+def speak(audio):
+
